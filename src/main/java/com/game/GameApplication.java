@@ -9,6 +9,6 @@ public class GameApplication {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		GameController controller = new GameController();
-		controller.startGame("localhost");
+		controller.startGame(args[0]);
 	}
 }

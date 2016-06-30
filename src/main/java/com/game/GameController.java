@@ -19,7 +19,7 @@ public class GameController {
 	
 	public void startGame(String ipaddress) throws IOException, InterruptedException {
 		while(true) {
-			URL obj = new URL("http://"+ipaddress+":8080/score?yards=4");
+			URL obj = new URL("http://"+ipaddress+":8095/score?yards=4");
 			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 			con.setRequestMethod("POST");
 			con.getResponseCode();
